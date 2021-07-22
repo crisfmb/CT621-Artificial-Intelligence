@@ -1,0 +1,2 @@
+division(X,H) :-
+    H mod X =:= 0.

@@ -1,0 +1,8 @@
+mirror_list([],[]).
+mirror_list([H|T],A) :-
+mirror_list(T,B),
+concatenate(B,[H], A).
+concatenate([], H, H).
+concatenate([H|T],A,[H|B]):-
+concatenate(T,A,B).
+

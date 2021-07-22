@@ -1,0 +1,5 @@
+Num_list(0,[0]).
+Num_list(X,[H|T]) :- 
+H is X,
+N is X-1, 
+Num_list(N,T).
